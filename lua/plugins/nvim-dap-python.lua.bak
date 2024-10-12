@@ -1,0 +1,16 @@
+return {
+  {
+    "mfussenegger/nvim-dap-python",
+    ft = "python",
+    dependencies = {
+      "mfussenegger/nvim-dap-python",
+      "rcarriga/nvim-dap-ui"
+    },
+    config = function()
+      -- Plugin configuration goes here
+      local path = "~/.virtualenvs/debugpy/bin/python"
+      require("dap-python").setup(path)
+    end,
+  },
+  -- Add more plugins as needed
+}
